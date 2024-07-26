@@ -1,0 +1,7 @@
+beauty_agency:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: 'beauty_agency.duckdb'
+      threads: 24

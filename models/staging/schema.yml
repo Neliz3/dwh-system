@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: raw_businesses
+    columns:
+      - name: id
+        tests:
+          - unique
+          - not_null
+      - name: field
+        tests:
+          - not_null
+
+  - name: stg_specialist
+    columns:
+      - name: id
+        tests:
+          - unique
+          - not_null
+      - name: age
+        tests:
+          - dbt_expectations.expect_column_mean_to_be_between:
+              min_value: 18

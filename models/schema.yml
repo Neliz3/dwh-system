@@ -1,0 +1,62 @@
+version: 2
+
+models:
+  - name: businesses
+    description: Table to store business information.
+
+    columns:
+      - name: id
+        description: This is a unique identifier for a business
+
+      - name: name
+        description: Name of a business.
+
+      - name: service_name
+        description: List of services.
+
+      - name: password
+        description: Password of a business user.
+
+      - name: field
+        description: field of a business.
+
+
+  - name: specialist
+    description: Table to store specialist information.
+
+    columns:
+      - name: id
+        description: This is a unique identifier for a specialist
+
+      - name: first_name
+        description: Specialist's first name.
+
+      - name: last_name
+        description: Specialist's last name.
+
+      - name: email
+        description: Email of a specialist.
+
+      - name: phone
+        description: Phone of a specialist.
+
+      - name: password
+        description: Password of a specialist.
+
+      - name: age
+        description: Age of a specialist.
+
+      - name: city
+        description: City of a specialist.
+
+      - name: specialization
+        description: Specialization of a specialist.
+
+      - name: years_of_experience
+        description: Years of an experience of a specialist.
+
+      - name: services_id
+        description: Unique identifier for services.
+
+      - name: business_id
+        description: Unique identifier for a business.
