@@ -1,0 +1,6 @@
+version: 2
+
+macros:
+  - name: count_rows_macros
+    arguments:
+      - name: table_name

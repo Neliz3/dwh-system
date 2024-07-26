@@ -1,4 +1,4 @@
-{% call count_rows(table_name) %}
+{% call count_rows_macros(table_name) %}
 
     SELECT count(*) FROM {{ table_name }}
 
